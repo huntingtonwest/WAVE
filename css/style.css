@@ -45,6 +45,7 @@ h1 {
 	font-variant: normal;
 	font-weight: 500;
 	line-height: 26.4px;
+  padding: 1em;
 }
 h3 {
 	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
@@ -61,12 +62,12 @@ p {
 	font-variant: normal;
 	font-weight: 400;
 	line-height: 20px;
-  padding-bottom:1em;
 }
 
 .boxed h1 {
   font-size: 40px;
   line-height: 60px;
+  padding: 0;
 }
 
 #inverse h1 {
@@ -116,7 +117,7 @@ pre {
 
 
 .banner {
-  background-image:url('https://static.pexels.com/photos/417045/pexels-photo-417045.jpeg');
+  background-image:url('https://s3.amazonaws.com/s3.imagefinder.co/uploads/2017/04/24153657/blue-night-sky-filled-with-stars-880x587.jpg');
   background-size: cover;
   width: 100%;
 }
@@ -146,33 +147,44 @@ pre {
 }
 
 .featurette {
-  margin: 3em 8em;
+  margin: 0;
   text-align: center;
   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
   /* background-color: rgba(255, 255, 255, 0.5); */
 }
 
+.my-container {
+  padding: 0em 0em;
+  margin: 0em 0em;
+}
+
+
 @media screen and (min-width: 400px) {
-  ,featurette {
-    margin: 1em 0em;
+  featurette {
+    margin: 1em auto;
   }
   .featurette img {
-    max-width: 400px;
+    width: auto;
+  }
+  .my-container {
+    padding: 0em;
+    margin: 0em;
   }
 }
 
 @media screen and (min-width: 800px) {
   .featurette {
-    margin: 1em 2em;
+    margin: 1em auto;
   }
   .featurette img {
-    max-width: 500px;
+    width: auto;
   }
+
 }
 
 @media screen and (min-width: 1200px) {
   .featurette {
-    margin: 3em 10em;
+    margin: 1em auto;
     /* background-color: red; */
   }
   .featurette img {
@@ -189,6 +201,6 @@ pre {
 }
 
 iframe {
-  min-width: 50%;
+  min-width: 80%;
   min-height: 400px;
 }
