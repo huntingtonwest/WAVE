@@ -1,5 +1,7 @@
 body {
   /* padding-top: 5rem; */
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif!important;
+
 }
 .starter-template {
   padding: 0.5rem 0.5rem;
@@ -34,8 +36,8 @@ navbar-brand {
 
 .boxed {
   border: 1.5px solid Black ;
-  margin: 8em 8em;
-  padding: 2em;
+  margin: 8em 0em;
+  padding: 0em;
 }
 
 h1 {
@@ -61,11 +63,11 @@ p {
 	font-variant: normal;
 	font-weight: 400;
 	line-height: 20px;
-  padding-bottom:1em;
+  /* padding-bottom:1em; */
 }
 
 .boxed h1 {
-  font-size: 40px;
+  font-size: 28px;
   line-height: 60px;
 }
 
@@ -121,6 +123,7 @@ pre {
   width: 100%;
 }
 
+
 .featurette-heading {
   font-weight: 400;
   line-height: 50px;
@@ -142,44 +145,74 @@ pre {
 }
 
 .featurette img {
-  max-width: 550px;
+  max-width: 250px;
 }
 
 .featurette {
-  margin: 3em 8em;
+  margin: 3em 0em;
   text-align: center;
-  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
-  /* background-color: rgba(255, 255, 255, 0.5); */
+}
+
+.my-container {
+  padding: 0em 0em;
 }
 
 @media screen and (min-width: 400px) {
-  ,featurette {
+  .featurette {
     margin: 1em 0em;
   }
   .featurette img {
-    max-width: 400px;
+    max-width: 350px;
+  }
+
+  .banner h1 {
+    font-size: 30px;
+  }
+  .boxed {
+    margin: 8em 2em;
+    padding: 2em;
   }
 }
 
 @media screen and (min-width: 800px) {
   .featurette {
-    margin: 1em 2em;
+    margin: 1em 0em;
   }
   .featurette img {
     max-width: 500px;
+  }
+
+  .banner h1 {
+    font-size: 35px;
+  }
+  .boxed {
+    margin: 8em 8em;
+    padding: 2em;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .featurette {
-    margin: 3em 10em;
-    /* background-color: red; */
+    margin: 3em 1em;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .featurette {
+    margin: 3em 2em;
   }
   .featurette img {
-    max-width: 550px;
+    max-width: 600px;
   }
   .my-container {
-    padding: 0em 2em;
+    padding: 0em 5em;
+  }
+  .banner h1 {
+    font-size: 45px;
+  }
+  .boxed {
+    margin: 8em 8em;
+    padding: 2em;
   }
 }
 
