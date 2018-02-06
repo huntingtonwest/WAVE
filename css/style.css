@@ -34,7 +34,7 @@ navbar-brand {
 
 .boxed {
   border: 1.5px solid Black ;
-  margin: 4em;
+  margin: 8em 8em;
   padding: 2em;
 }
 
@@ -63,6 +63,22 @@ p {
 	line-height: 20px;
   padding-bottom:1em;
 }
+
+.boxed h1 {
+  font-size: 40px;
+  line-height: 60px;
+}
+
+#inverse h1 {
+  font-size: 35px;
+  line-height: 60px;
+}
+
+#inverse p {
+  font-size: 26px;
+  line-height: 48px;
+}
+
 blockquote {
 	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 	font-size: 21px;
@@ -86,12 +102,6 @@ pre {
   padding: 3em;
 }
 
-#inverse-2 {
-  background-color: black;
-  color: white;
-  padding: 3em 2em;
-}
-
 #footer {
   color: white;
   background-color: black;
@@ -112,20 +122,73 @@ pre {
 }
 
 .featurette-heading {
-  font-weight: 300;
-  line-height: 2;
+  font-weight: 400;
+  line-height: 50px;
+  font-size: 23px;
 }
 
-.featurette {
-  text-align: center;
+.featurette p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.featurette .day {
+  font-weight: 900;
+
+}
+.featurette .info {
+  font-style: italic;
 }
 
 .featurette img {
-  max-width: 50%;
-  max-height: 50%;
-  padding: 4em;
+  max-width: 550px;
+}
+
+.featurette {
+  margin: 3em 8em;
+  text-align: center;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  /* background-color: rgba(255, 255, 255, 0.5); */
+}
+
+@media screen and (min-width: 400px) {
+  ,featurette {
+    margin: 1em 0em;
+  }
+  .featurette img {
+    max-width: 400px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .featurette {
+    margin: 1em 2em;
+  }
+  .featurette img {
+    max-width: 500px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .featurette {
+    margin: 3em 10em;
+    /* background-color: red; */
+  }
+  .featurette img {
+    max-width: 550px;
+  }
+  .my-container {
+    padding: 0em 2em;
+  }
+}
+
+#black {
+  background-color: black;
+  color: white;
 }
 
 iframe {
   min-width: 50%;
+  min-height: 400px;
 }
