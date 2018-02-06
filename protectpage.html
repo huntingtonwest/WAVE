@@ -54,36 +54,26 @@
   </div>
 
 
-<!-- Lock -->
-<div class="container-fluid" id=lock>
-  <SCRIPT>
-    function passWord() {
-      var testV = 1;
-      var pass1 = prompt('Please Enter Your Password', ' ');
-      while (testV < 3) {
-        if (!pass1)
-          history.go(-1);
-        if (pass1.toLowerCase() == "letmein") {
-          alert('You Got it Right!');
-          window.open('protectpage.html');
-          break;
-        }
-        testV += 1;
-        var pass1 =
-          prompt('Access Denied - Password Incorrect, Please Try Again.', 'Password');
-      }
-      if (pass1.toLowerCase() != "password" & testV == 3)
-        history.go(-1);
-      return " ";
-    }
-  </SCRIPT>
-  <CENTER>
-    <FORM>
-      <input type="button" value="Enter Protected Area" onClick="passWord()">
-    </FORM>
-  </CENTER>
+
+  <!-- Container 2  -->
+  <div class="container-fluid text-center" id="black">
+    <div class="row content">
+      <div class="col text-center">
+        <h1>Current Member Directory</h1>
+        <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQMiA5qL_h0iYzNHj6PW47RClP4ZVFXt-U7CduDTjIkjf-dnfYH73ZWPlKv4PbIWZXaRffsPxcFYLgm/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+      </div>
+    </div>
   </div>
 
+  <!-- Container 3  -->
+  <div class="container-fluid text-center" id="black">
+    <div class="row content">
+      <div class="col text-center">
+        <h1>New Member Form</h1>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe2kfTz4bKMIzb78G_wstuievvPULBM9YyHntMQSXqsnAnsiw/viewform?embedded=true"></iframe>
+      </div>
+    </div>
+  </div>
 
   <!-- Footer -->
   <footer class="container-fluid text-right" id=footer>
