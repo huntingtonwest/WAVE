@@ -262,6 +262,7 @@ input {
 iframe {
   width: 90%;
   min-height: 400px;
+  height: 700px;
 
 }
 
