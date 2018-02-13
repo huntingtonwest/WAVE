@@ -116,7 +116,7 @@ pre {
 
 #footer p{
   line-height: 16px;
-  margin: 3em 0.75em;
+  padding:  3em 1.5em;
 }
 
 
@@ -131,18 +131,23 @@ pre {
 .featurette-heading {
   font-weight: 400;
   line-height: 50px;
-  font-size: 23px;
+  font-size: 25px;
+  letter-spacing: 5px;
+  margin-bottom: 1.1em;
+  margin-top: 2.1em;
+}
+#exclude {
+  margin-top: 0em;
+
 }
 
 .featurette p {
   font-weight: 400;
   font-size: 15px;
-  line-height: 30px;
 }
 
 .featurette .day {
   font-weight: 900;
-
 }
 .featurette .info {
   font-style: italic;
@@ -166,6 +171,10 @@ input {
   background-color: black;
   color: white;
   left:auto;
+}
+
+#lock {
+  padding: 5em 2em 2em 2em;
 }
 
 @media screen and (min-width: 400px) {
@@ -192,6 +201,9 @@ input {
     margin-right: auto;
     display: block;
   }
+  #lock {
+    padding: 5em 10em 10em 10em;
+  }
 }
 
 @media screen and (min-width: 800px) {
@@ -210,7 +222,7 @@ input {
     padding: 2em;
   }
   .church {
-    padding: 35em!important;
+    padding-bottom: 35em!important;
   }
   input {
     font-size: 30px;
@@ -220,6 +232,19 @@ input {
     margin-left:auto;
     margin-right: auto;
     display: block;
+  }
+  .featurette-heading {
+    margin-top: 0em;
+    font-size: 28px;
+    letter-spacing: 10px;
+
+  }
+  #where {
+    margin-top: 2.1em;
+
+  }
+  #lock {
+    padding: 5em 10em 10em 10em;
   }
 }
 
@@ -250,7 +275,7 @@ input {
 
 @media screen and (min-width: 1600px) {
   #lock {
-    padding: 20em;
+    padding: 5em 20em 20em 20em;
   }
 }
 
@@ -267,10 +292,97 @@ iframe {
 }
 
 #lock {
-  padding: 8em;
+  padding-bottom: 8em;
 }
 
 .odd {
-  background-color: #1B1C21;
+  background-color: black;
   color: white;
+}
+
+
+header.masthead {
+  background: no-repeat center center;
+  background-color: #868e96;
+  background-attachment: scroll;
+  position: relative;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+header.masthead .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #212529;
+  opacity: 0.5;
+}
+
+header.masthead .page-heading,
+header.masthead .post-heading,
+header.masthead .site-heading {
+  padding: 200px 0 150px;
+  color: white;
+}
+
+@media only screen and (min-width: 768px) {
+  header.masthead .page-heading,
+  header.masthead .post-heading,
+  header.masthead .site-heading {
+    padding: 200px 0;
+  }
+}
+
+header.masthead .page-heading,
+header.masthead .site-heading {
+  text-align: center;
+}
+
+header.masthead .page-heading h1,
+header.masthead .site-heading h1 {
+  font-size: 40px;
+  line-height: 1.1;
+  margin-top: 0;
+}
+
+header.masthead .page-heading .subheading,
+header.masthead .site-heading .subheading {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 2.1;
+  display: block;
+  margin: 21px 0 0 15px;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+@media only screen and (min-width: 768px) {
+  header.masthead .page-heading h1,
+  header.masthead .site-heading h1 {
+    font-size: 70px;
+  }
+}
+
+header.masthead .post-heading .meta,
+header.masthead .post-heading .subheading {
+  line-height: 4.1;
+  display: block;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+  header.masthead .post-heading h1 {
+    font-size: 55px;
+  }
+  header.masthead .post-heading .subheading {
+    font-size: 30px;
+  }
+}
+
+#second {
+  max-height: 500px;
 }
