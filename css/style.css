@@ -28,6 +28,7 @@ navbar-brand {
   background-color: black;
 }
 
+
 .collaps ul.navbar-nav>li>a {
   color: white;
 }
@@ -83,6 +84,11 @@ p {
 #inverse p {
   font-size: 26px;
   line-height: 48px;
+}
+
+.church {
+float: none; margin: 0 auto;  width: 100%;
+text-align: center;
 }
 
 blockquote {
@@ -170,7 +176,6 @@ pre {
 input {
   background-color: black;
   color: white;
-  left:auto;
 }
 
 #lock {
@@ -196,13 +201,11 @@ input {
     font-size: 20px;
     background-color: black;
     color: white;
-    padding: 2em;
-    margin-left:0;
-    margin-right: auto;
-    display: block;
+    padding:  1em;
   }
+
   #lock {
-    padding: 5em 10em 10em 10em;
+    padding: 5em 15em 10em 10em;
   }
 }
 
